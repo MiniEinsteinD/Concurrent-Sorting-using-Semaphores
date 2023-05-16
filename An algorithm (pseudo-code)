@@ -1,0 +1,42 @@
+The following document contains a pseudo-code that represnts the logic of my code:
+
+Define the size of the array that the user is going to enter [7]
+Craete shared memory structure that contains an array of chars
+Craete structure that contains the semaphore value, *buf, *array
+
+//forking children
+i=0
+while i<4:
+	pid = fork a child
+	if(is a child [pid==0])
+		break
+
+Allocating shared memo in every single child
+Attaching and init the shared memo
+Make shared memo accessable 
+
+Create semaphore_id
+Check for validaties of the semaphore operations
+
+Init arrayOfChars fo the user to enter; 
+Store the chars entered in the array inside the shared memory
+Lower case all the input chars
+
+Switch:
+	pid == -1:
+		fork failed
+	pid==0:
+		Enter critcal section by accuring the lock (semaphore)
+		swap 3 chars from the array in the shared mrmory depending on the index of the porcess
+		for(int c= process number + 2; c < 0 ; c--){
+		    if (char at index [c + 1] < char at index[c]) {
+		    char temp = char at index[c];
+		    char at index[c] = char at index[c + 1];
+		    char at index[c + 1] = temp;
+		  }
+		} 
+		Exist critical section by realeasing the lock (semaphore)
+	default:
+		Parent process waits 3 times for the 3 process ' to finish
+		Prints the final results
+		Deattaching and clearing the shared memo

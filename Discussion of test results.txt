@@ -1,0 +1,50 @@
+Some test results:
+
+The input: 
+
+	X, A, z, M, W, y, D
+
+The final output: 
+
+	The ordered array is: 
+	x	a	d	m	w	y	z	
+    
+
+Discussion: 
+
+    By comparing the resulting answer using the code I developed and the answer obtained from the calculator, 
+    I did not achieve the exact same results which implies that my code does not function correctly.
+
+-------------------------------------------------------------------------------------
+
+The input: 
+
+	Q, H, t, b, U, S, a 
+
+The final output: 
+
+	The ordered array is: 
+	q	a	b	h	s	t	u	
+    
+Discussion: 
+
+    By comparing the resulting answer using the code I developed and the answer obtained from the calculator, 
+    I did not achieve the exact same results which implies that my code does not function correctly.
+
+-------------------------------------------------------------------------------------
+
+The input: 
+
+	D, a, n, i, h, U, M 
+
+The final output: 
+
+	The ordered array is: 
+	d	a	h	i	m	n	u	
+    
+Discussion: 
+
+    By comparing the resulting answer using the code I developed and the answer obtained from the calculator, 
+    I did not achieve the exact same results which implies that my code does not function correctly.
+
+

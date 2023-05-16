@@ -1,0 +1,16 @@
+
+Description of the important goals of my design:
+
+
+    I used an integer [i] that keeps track of every child's process that is being executed. 
+    I used a while loop to fork 3 children from the parent process.  
+    The main goal of this design decision is to use a more efficient way to fork the children's processes instead of using many switch statements 
+    which makes the code more complicated and less readable.  
+    My code breaks out of the while loop when a child process is detected and enters a switch statement to execute the proper code for each process.
+
+    Finally, I decided to include 3 wait statements in the parent process inside the switch statement so the parent waits until all the children are done altering the variables in the shared memory. 
+    The parent starts using the variables from the shared memory that the children finished altering and comes up with the final results.
+
+    The overall design goals are to keep the code easy, concise, understandable, and more efficient. 
+    I went through multiple iterations to develop this final design and I hope it meets all the requirements to achieve an efficient and functional project.
+
